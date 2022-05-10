@@ -1,0 +1,51 @@
+<div class="flyoutclose">
+  <img src="/ecomwcs/static/StaticWeb/DL/flyout/2021/icons/btn_close.svg" />
+</div>
+
+<div class="flyout_nav_title">
+  <a href="/e/fr/dl/merchandise-gadgets">Merchandising</a>
+</div>
+
+<div class="flyout_nav_outer_wrapper">
+  <div class="flyout_nav_inner_wrapper">
+    <div class="flyout_nav_column col4">
+      <h3>Catégories</h3>
+      <a href="/e/fr/dl/personnages-de-jeux-video">Funko poppen</a>
+      <a href="/e/fr/dl/figurines-heros-et-super-heros">Figurines</a>
+      <a href="/e/fr/dl/cartes-a-collectionner">Pokémon trading cards</a>
+      <a href="/e/fr/dl/gaming-peluches-jeux-video">Peluches gaming</a>
+      <a href="/e/fr/dl/gaming-idees-cadeaux">Cadeaux pour Gamers</a>
+      <a href="/e/fr/dl/pop-culture">Cadeaux pour Binge watchers</a>
+      <a href="/e/fr/dl/cadeaux-manga">Cadeaux pour fans de mangas</a>
+    </div>
+    <div class="flyout_nav_column col4">
+      <h3>Licences populaires</h3>
+      <a href="/e/fr/dl/pokemon-heros">Pokémon</a>
+      <a href="/e/fr/dl/mario-heros">Super Mario</a>
+      <a href="/e/fr/dl/harry-potter-heros">Harry Potter</a>
+      <a href="/e/fr/dl/star-wars-heros">Star Wars</a>
+      <a href="/e/fr/dl/avengers-heros">Avengers</a>
+      <a href="/e/fr/dl/spider-man-heros">Spider-Man</a>
+      <a href="/e/fr/dl/batman-heros">Batman</a>
+      <a href="/e/fr/dl/roblox-heros">Roblox</a>
+      <a href="/e/fr/dl/among-us-heros">Among us</a>
+      <a href="/e/fr/dl/minecraft-heros">Minecraft</a>
+      <a href="/e/fr/dl/friends-heros">Friends</a>
+    </div>
+    <div class="flyout_nav_column col4">
+      <!--<h3>Op zoek naar inspiratie?</h3>
+            <a href="/e/nl/dl/carnaval-quiz">In welke droomwereld pas jij het best? Doe de test!</a>
+            <a href="/e/nl/dl/carnaval-kleurplaten">Ontdek onze Carnaval kleurplaten</a>
+            <a href="/e/nl/dl/carnaval-knutseltips">Ontdek onze Carnaval knutseltips</a>-->
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $(".flyoutclose").on("click", function () {
+      var x = $(this).closest("li").attr("data-submenu-id");
+      $("li[data-submenu-id=" + x + "]").toggleClass("active");
+    });
+  });
+</script>

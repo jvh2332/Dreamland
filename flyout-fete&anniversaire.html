@@ -1,0 +1,71 @@
+<div class="flyoutclose">
+    <img src="/ecomwcs/static/StaticWeb/DL/flyout/2021/icons/btn_close.svg">
+</div>
+
+<div class="flyout_nav_title"><a href="/e/fr/dl/party-fete">Fête & Anniversaire</a></div>
+
+<div class="flyout_nav_outer_wrapper">
+    <div class="flyout_nav_inner_wrapper">
+        <div class="flyout_nav_column col4">
+            <a href="/e/fr/dl/fete-decorations" ><h3>Décos & Tables de fête</h3></a>
+            <a href="/e/fr/dl/Ballons">Ballons</a>
+            <a href="/e/fr/dl/guirlandes-et-fanions">Guirlandes & Fanions</a>
+            <a href="/e/fr/dl/bougies-fete">Bougies</a>
+            <a href="/e/fr/dl/sets-party">Sets Party</a>
+            <a href="e/fr/dl/rouleaux-de-nappe">Rouleaux de nappe & Serviettes</a>
+        </div>
+        <div class="flyout_nav_column col4">
+            <a href="/e/fr/dl/pinata"><h3>Pinatas & Accessoires</h3></a>
+
+        </div>
+        <div class="flyout_nav_column col4">
+            <a href="/e/fr/dl/coffrets-danniversaire"><h3>Coffrets d'anniversaire</h3></a>
+
+        </div>
+        <div class="flyout_nav_column col4">
+            <h3>Conseils & Inspiration</h3>
+                <a  href="/e/fr/dl/anniversaire">C'est mon anniversaire !</a>
+                <a  href="/e/fr/dl/dreamland-carte-cadeau">Offrez un bon-cadeau</a>
+                <a  href="/e/fr/dl/denichez-le-cadeau-ideal">Trouvez le cadeau rêvé avec DreamBuddy</a>
+                <a  href="/e/fr/dl/ateliercreatif">Réalisez des super bricolages</a>
+        </div>
+    </div>
+    <div class="flyout_nav_inner_wrapper">
+        <div class="flyout_nav_column col4">
+            <a href="/e/fr/dl/cakedesign-gateau"><h3>Cake Design</h3></a>
+            <a href="/e/fr/dl/pate-a-sucre-et-accessoires"><h3>Pâte à sucre & Accessoires</h3></a>
+            <a href="/e/fr/dl/acessoires-de-patisserie">Accessoires de pâtisserie</a>
+            <a href="/e/fr/dl/moules-et-sets-de-patisserie">Moules & Sets de pâtisserie</a>
+            <a href="/e/fr/dl/decorations-et-glacage">Décorations & Glaçage</a>
+            <a href="/e/fr/dl/colorants-alimentaires">Colorants alimentaires</a>
+        </div>
+        <div class="flyout_nav_column col4">
+            <a href="/e/fr/dl/fetes-a-theme"><h3>Fêtes à thème</h3></a>
+            <a href="/e/fr/dl/arc-en-ciel-fete-a-theme">Arc-en-ciel</a>
+            <a href="/e/fr/dl/bumba-fete-a-theme">Bumba</a>
+            <a href="/e/fr/dl/la-reine-des-neiges-fete-a-theme">La Reine des Neiges</a>
+            <a href="/e/fr/dl/licorne-fete-a-theme">Licorne</a>
+            <a href="/e/fr/dl/confetti-fete-a-theme">Happy Birthday</a>
+            <a href="/e/fr/dl/super-mario-fete-a-theme">Super Mario</a>
+        </div>
+        <div class="flyout_nav_column col4">
+            <a href="/e/fr/dl/article-de-fete"><h3>Articles de fête</h3></a>
+            <a href="/e/fr/dl/couronnes-danniversaire">Couronnes d'anniversaire</a>
+            <a href="/e/fr/dl/serpentins-et-confettis">Serpentines & Confettis</a>
+            <a href="/e/fr/dl/sacs-de-fete">Sacs de fête</a>
+            <a href="/e/fr/dl/machines-et-accessoires">Machines & Accessoires</a>
+            <a href="/e/fr/dl/boules-a-facettes-et-eclairage">Boules à facettes & Éclairage</a>
+        </div>
+        <div class="flyout_nav_column col4"></div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function() {
+        $(".flyoutclose").on('click', function() {
+            var x = $(this).closest("li").attr("data-submenu-id");
+            $("li[data-submenu-id="+x+"]").toggleClass("active");
+        });  
+    });
+</script>

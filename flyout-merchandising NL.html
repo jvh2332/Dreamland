@@ -1,0 +1,50 @@
+<div class="flyoutclose">
+  <img src="/ecomwcs/static/StaticWeb/DL/flyout/2021/icons/btn_close.svg" />
+</div>
+
+<div class="flyout_nav_title">
+  <a href="/e/nl/dl/merchandise">Merchandising</a>
+</div>
+
+<div class="flyout_nav_outer_wrapper">
+  <div class="flyout_nav_inner_wrapper">
+    <div class="flyout_nav_column col4">
+      <h3>Categorieën</h3>
+      <a href="/e/nl/dl/figuren-gaming">Funko poppen</a>
+      <a href="/e/nl/dl/actiefiguren-en-superhelden">Actiefiguren</a>
+      <a href="/e/nl/dl/verzamelkaarten">Pokémon trading cards</a>
+      <a href="/e/nl/dl/pluche-gaming">Pluches gaming</a>
+      <a href="/e/nl/dl/cadeautips-gaming">Cadeaus voor Gamers</a>
+      <a href="/e/nl/dl/binge-watchers">Cadeaus voor Binge watchers</a>
+    </div>
+    <div class="flyout_nav_column col4">
+      <h3>Populaire licenties</h3>
+      <a href="/e/nl/dl/pokemon-helden">Pokémon</a>
+      <a href="/e/nl/dl/mario-helden">Super Mario</a>
+      <a href="/e/nl/dl/harry-potter-helden">Harry Potter</a>
+      <a href="/e/nl/dl/star-wars-helden">Star Wars</a>
+      <a href="/e/nl/dl/avengers-helden">Avengers</a>
+      <a href="/e/nl/dl/spider-man-helden">Spider-Man</a>
+      <a href="/e/nl/dl/batman-helden">Batman</a>
+      <a href="/e/nl/dl/roblox-helden">Roblox</a>
+      <a href="/e/nl/dl/among-us-helden">Among us</a>
+      <a href="/e/nl/dl/minecraft-helden">Minecraft</a>
+      <a href="/e/nl/dl/friends-helden">Friends</a>
+    </div>
+    <div class="flyout_nav_column col4">
+      <!--<h3>Op zoek naar inspiratie?</h3>
+            <a href="/e/nl/dl/carnaval-quiz">In welke droomwereld pas jij het best? Doe de test!</a>
+            <a href="/e/nl/dl/carnaval-kleurplaten">Ontdek onze Carnaval kleurplaten</a>
+            <a href="/e/nl/dl/carnaval-knutseltips">Ontdek onze Carnaval knutseltips</a>-->
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $(".flyoutclose").on("click", function () {
+      var x = $(this).closest("li").attr("data-submenu-id");
+      $("li[data-submenu-id=" + x + "]").toggleClass("active");
+    });
+  });
+</script>
